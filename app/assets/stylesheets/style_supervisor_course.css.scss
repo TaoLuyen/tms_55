@@ -149,6 +149,19 @@ table#tbl_lscourse th  {
   color: white;
 }
 
+table#tbl_lsusercourse tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table#tbl_lsusercourse tr:nth-child(odd) {
+  background-color:#fff;
+}
+
+table#tbl_lsusercourse th  {
+  background-color: black;
+  color: white;
+}
+
 #text_area {
   rows: 5;
   cols: 20
