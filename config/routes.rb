@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     root "users#index"
     resources :users
     resources :subjects, only: [:show, :index]
-    resources :courses
+    resources :courses do
+      resource :assign_trainees, only: [:edit, :update]
+    end
   end
 end
